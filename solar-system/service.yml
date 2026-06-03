@@ -4,11 +4,12 @@ metadata:
   labels:
     app: solar-system
   name: solar-system-service
+  namespace: solar-system
 spec:
   ports:
   - port: 80 #change to 80
     protocol: TCP
-    targetPort: 8088 #change to 80
+    targetPort: 80 #change to 80
     nodePort: 30333
   selector:
     app: solar-system
